@@ -69,17 +69,27 @@ Remember to take them, download them, and store them in an organized way or use 
 
 ## Automations
 
-### Blueprints
+### [Blueprints](https://www.home-assistant.io/docs/automation/using_blueprints/)
 Automation recipes that are easy to use and share with others, like
  - [Automatic backups](https://community.home-assistant.io/t/create-automated-backups-every-day/254039)
  - Need to edit file to use *backup_full* instead of *snapshot_full*
 
-### Scenes
+### [Scenes](https://www.home-assistant.io/docs/scene/editor/)
 Simple way to turn on or off many devices at once to "set a scene"
 - Turn off all the lights before going to bed but turn on the bedroom fan
 - Set the family room lights to dim and turn on the tv for movie night
 
-## More Advanced Configurations
+Using the GUI editor it will set the state of those devices to what they currently are. If that isn't possible then edit the entity/device states of the scene in the scenes.yaml file.
+
+### [Scripts](https://www.home-assistant.io/integrations/script/)
+
+Allows us to manually trigger a variety of actions
+
+### [Automations](https://www.home-assistant.io/getting-started/automation/)
+
+Allows us to automatically trigger a variety of actions including calling a script or a scene based on the state of a device or a wide variety of other triggers (sunset, time, home assistant turning off)
+
+## More [Advanced Configurations](https://www.home-assistant.io/getting-started/configuration/)
 
 ### Our First Add-On -> File Editor
 Download from Add-Ons. Very useful for editing configuration files. Once you install an add-on hit the refresh button to see it
