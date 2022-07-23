@@ -2,6 +2,11 @@
 We recently went to Disney World and rode on the Carousel of Progress. In that ride we see the great advancements the world has made, but also a vision of the future (in 1964). There’s a connected home with a voice assistant that uses devices around the house to do things for the family. With the IoT devices available on the market today we can have that home of the future.
 The problem with setting up that futuristic home is you likely have a variety of different devices that you’re trying to control with a number of different platforms. It’s too disconnected and using an assistant like Google or Alexa can limit what you could potentially do with these cool technologies. However with Home Assistant we can collect data from a variety of different sources, run it through a workflow, and output it to any device we want on our network. The number of cool scenarios you can create is limitless. In this session we’ll talk about how to set it up and run through basic functionality so you can hit the ground running when you get back home.
 
+## Prerequisites
+- How to setup Internet of Things (IoT) devices on a network
+- (Optional) If you want to follow along please have Home Assistant installed on a device
+- (Optional) If time allows I might show how to install Home Assistant using a Virtual Machine and [VirtualBox](https://www.virtualbox.org/), which requires this [vdi file](https://github.com/home-assistant/operating-system/releases/download/8.2/haos_ova-8.2.vdi.zip)
+
 ## Introduction
 Jesse Dahir-Kanehl
 
@@ -12,8 +17,10 @@ Jesse Dahir-Kanehl
 - Cyclist
 - IoT Automater
 
+You can reach me on all platforms @TheCodingCanal or email TheCodingCanal@gmail.com
+
 ## Home Assistant
-- “Open source home automation that puts local control and privacy first.”
+- “Open source home automation that puts local control and privacy first.” - Home Assistant website
 - Alternative to Google Home, Amazon Alexa, Apple Siri, and different hubs
 - Local control - works without internet, you have control over your data
 - Better security from big data leaks - smaller target for hackers
@@ -23,28 +30,33 @@ Jesse Dahir-Kanehl
 ## Deciding on Which Installation Method to Use
 [Installation Guide](https://www.home-assistant.io/installation/)
 
-- [Home Assistant Yellow](https://www.crowdsupply.com/nabu-casa/home-assistant-yellow#products)
+- [Home Assistant Yellow](https://www.crowdsupply.com/nabu-casa/home-assistant-yellow)
     - Built in Raspberry Pi 4 module
     - Zigbee module
     - M.2 SSD slot
     - Ethernet with Power over Ethernet
     - Fully open source and supports Nabu Casa, founders of Home Assistant and EspHome
-    - Expensive but fully featured
+    - Expensive but fully featured, plug-n-play
 - [Raspberry Pi 4](https://smile.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TC2BK1X)
     - Next easiest, but a bit pricey
     - Write to SD card and install - follow the prompts
 - Docker Container
     - Next easiest, but less features
-- VM
+    - Allows you to install on existing hardware
+- Virtual Machine (VM)
     - Not too hard, fully featured
     - Could use more resources depending on install process
-- Home Assistant OS install
+    - Allows you to install on existing hardware
+- Home Assistant Operating System (OS) install
     - Create bootable usb and install
-- Core on Linux, macOS, WSL
+    - Allows you to install on existing hardware
+- Core on Linux, macOS, Windows Subsystem for Linux (WSL)
     - Doesn't make sense to just do this, use Docker instead
     - Stepping stone for Supervised
+    - Allows you to install on existing hardware
 - Supervised on Linux
     - Tricky to install but fully featured, uses less resources
+    - Allows you to install on existing hardware
 
 ## Onboarding
 - Simple setup using [docs](https://www.home-assistant.io/getting-started/onboarding/)
@@ -54,7 +66,7 @@ Jesse Dahir-Kanehl
 Support for so many [devices!](https://www.home-assistant.io/integrations/)
 
 - Auto Discovery
-- UI Integration through Settings menu, no restart needed
+- User Interface Integration through Settings menu, no restart needed
 - Platform Integration
     - Example: [Tuya](https://www.home-assistant.io/integrations/tuya/)
 - Manual Integration
@@ -70,9 +82,7 @@ Remember to take them, download them, and store them in an organized way or use 
 ## Automations
 
 ### [Blueprints](https://www.home-assistant.io/docs/automation/using_blueprints/)
-Automation recipes that are easy to use and share with others, like
- - [Automatic backups](https://community.home-assistant.io/t/create-automated-backups-every-day/254039)
- - Need to edit file to use *backup_full* instead of *snapshot_full*
+Automation recipes that are easy to use and share with others
 
 ### [Scenes](https://www.home-assistant.io/docs/scene/editor/)
 Simple way to turn on or off many devices at once to "set a scene"
@@ -95,6 +105,9 @@ Allows us to automatically trigger a variety of actions including calling a scri
 Download from Add-Ons. Very useful for editing configuration files. Once you install an add-on hit the refresh button to see it
 
 #### Google Drive Backup Add-on
+ Use a blueprint to setup [Automatic backups](https://community.home-assistant.io/t/create-automated-backups-every-day/254039)
+ - Need to edit file to use *backup_full* instead of *snapshot_full*
+
 This is an Add-On from an [external repository](https://github.com/sabeechen/hassio-google-drive-backup). Allows for backups to automatically be stored in a google drive instead of having to manually download them
 
 ### Editing Dashboard
