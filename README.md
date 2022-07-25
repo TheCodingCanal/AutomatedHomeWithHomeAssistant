@@ -7,8 +7,12 @@ The problem with setting up that futuristic home is you likely have a variety of
 - (Optional) If you want to follow along please have Home Assistant installed on a device
 - (Optional) If time allows I might show how to install Home Assistant using a Virtual Machine and [VirtualBox](https://www.virtualbox.org/), which requires this [vdi file](https://github.com/home-assistant/operating-system/releases/download/8.2/haos_ova-8.2.vdi.zip)
 
+## Special Thanks to That Conference and All the Sponsors!
+
+![Sponsors](https://i.imgur.com/yeQN7Mp.png)
+
 ## Introduction
-Jesse Dahir-Kanehl
+### Jesse Dahir-Kanehl
 
 - Developer
 - Tinkerer
@@ -51,7 +55,7 @@ You can reach me on all platforms @TheCodingCanal or email TheCodingCanal@gmail.
     - Create bootable usb and install
     - Allows you to install on existing hardware
 - Core on Linux, macOS, Windows Subsystem for Linux (WSL)
-    - Doesn't make sense to just do this, use Docker instead
+    - Only makes sense to use just this if your on Windows and don't need a fully featured install
     - Stepping stone for Supervised
     - Allows you to install on existing hardware
 - Supervised on Linux
@@ -118,3 +122,12 @@ This is an Add-On from an [external repository](https://github.com/sabeechen/has
 
 ### Home Assistant Cloud and Nabu Casa
 Easy way to setup remote connection to your Home Assistant instance and allows integration with cloud hubs like Google Assistant and Amazon Alexa
+
+## Thanks for Coming!
+Join us on That.us and the That Slack!
+
+![Join us on THat.us](https://i.imgur.com/w7F8l2y.png)
+
+Join us in person next year, July 2023!
+
+![Next Year](https://i.imgur.com/l1GU45T.png)
