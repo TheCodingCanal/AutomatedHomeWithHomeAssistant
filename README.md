@@ -19,7 +19,7 @@ The problem with setting up that futuristic home is you likely have a variety of
 ![Sponsors](https://i.imgur.com/yeQN7Mp.png)
 
 ## Introduction
-### Jesse Dahir-Kanehl
+### Jesse Dahir-Kanehl (he/him/his)
 
 - Developer
 - Tinkerer
