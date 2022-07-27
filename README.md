@@ -2,13 +2,20 @@
 We recently went to Disney World and rode on the Carousel of Progress. In that ride we see the great advancements the world has made, but also a vision of the future (in 1964). There’s a connected home with a voice assistant that uses devices around the house to do things for the family. With the IoT devices available on the market today we can have that home of the future.
 The problem with setting up that futuristic home is you likely have a variety of different devices that you’re trying to control with a number of different platforms. It’s too disconnected and using an assistant like Google or Alexa can limit what you could potentially do with these cool technologies. However with Home Assistant we can collect data from a variety of different sources, run it through a workflow, and output it to any device we want on our network. The number of cool scenarios you can create is limitless. In this session we’ll talk about how to set it up and run through basic functionality so you can hit the ground running when you get back home.
 
-## Prerequisites
+## This is a Beginner level course
+### Take Aways
+- Why you'd use Home Assistant compared to other platforms
+- How to install Home Assistant on any laptop or desktop
+- How to setup their IoT devices on Home Assistant
+- What are common scenarios people use Home Assistant for
+
+### Prerequisites
 - How to setup Internet of Things (IoT) devices on a network
 - (Optional) If you want to follow along please have Home Assistant installed on a device
 - (Optional) If time allows I might show how to install Home Assistant using a Virtual Machine and [VirtualBox](https://www.virtualbox.org/), which requires this [vdi file](https://github.com/home-assistant/operating-system/releases/download/8.2/haos_ova-8.2.vdi.zip)
 
 ## Special Thanks to That Conference and All the Sponsors!
-
+### Thanks to Rural Sourcing for sponsoring me!
 ![Sponsors](https://i.imgur.com/yeQN7Mp.png)
 
 ## Introduction
