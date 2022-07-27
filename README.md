@@ -62,11 +62,12 @@ You can reach me on all platforms @TheCodingCanal or email TheCodingCanal@gmail.
     - Create bootable usb and install
     - Allows you to install on existing hardware
 - Core on Linux, macOS, Windows Subsystem for Linux (WSL)
-    - Only makes sense to use just this if your on Windows and don't need a fully featured install
-    - Stepping stone for Supervised
+    - Not fully featured
+    - Only makes sense to use just this if your on Windows or you don't like Docker
     - Allows you to install on existing hardware
 - Supervised on Linux
     - Tricky to install but fully featured, uses less resources
+    - Ran into issue with docker install, had to do a apt --fix-issue and install docker using docker documentation
     - Allows you to install on existing hardware
 
 ## Onboarding
@@ -77,7 +78,6 @@ You can reach me on all platforms @TheCodingCanal or email TheCodingCanal@gmail.
 Support for so many [devices!](https://www.home-assistant.io/integrations/)
 
 - Auto Discovery
-- User Interface Integration through Settings menu, no restart needed
 - Platform Integration
     - Example: [Tuya](https://www.home-assistant.io/integrations/tuya/)
 - Manual Integration
